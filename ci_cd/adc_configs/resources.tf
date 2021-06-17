@@ -28,7 +28,7 @@ resource "citrixadc_service"  "service"{
 resource "citrixadc_cspolicy" "cspolicy"{
   csvserver       = citrixadc_csvserver.demo_csvserver.name
   targetlbvserver = citrixadc_lbvserver.lbvs.name
-  policyname      = format("$s-cspolicy", var.resource_prefix)
+  policyname      = format("%s-cspolicy", var.resource_prefix)
   rule            = format("HTTP.REQ.HOSTNAME.SERVER.EQ(\"demo-bg.webapp.com\") && HTTP.REQ.URL.PATH.SET_TEXT_MODE(IGNORECASE).STARTSWITH(\"/\") && sys.random.mul(100).lt(%s)", var.traffic_split_percentage)
   priority        = var.priority
 
