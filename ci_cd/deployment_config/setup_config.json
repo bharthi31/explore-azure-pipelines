@@ -1,5 +1,5 @@
 {
-  "TRAFFIC_SPLIT_PERCENTAGE": "0",
+  "TRAFFIC_SPLIT_PERCENTAGE": "100",
   "ADC_CONFIG_VALUES": "ci_cd/deployment_config/v2.tfvars",
   "DEPLOYMENT_VERSION": "v2"
 }
