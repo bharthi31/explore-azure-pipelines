@@ -17,7 +17,7 @@ resource "citrixadc_lbvserver"  "lbvs"{
 resource "citrixadc_service"  "service"{
     lbvserver = citrixadc_lbvserver.lbvs.name
     name = var.backend_service_name
-    ip = var.backend_service
+    ip = var.backend_service_ip
     servicetype  = "HTTP"
     port = 80
 

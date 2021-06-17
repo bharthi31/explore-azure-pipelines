@@ -30,7 +30,7 @@ stages:
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/ci_cd/adc_configs'
         allowTelemetryCollection: false
-        commandOptions: '-backend-config="path=/tmp/tfstates/$(TERRAFORM_BACKEND_KEY)"'
+        commandOptions: '-backend-config="path=/tmp/tfstates/$(DEPLOYMENT_VERSION).tfstate"'
         backendType: local
       displayName: 'terraform init'
       condition:  and(succeeded(), eq(variables['TEARDOWN_FLAG'], true))

@@ -3,7 +3,7 @@ variable "traffic_split_percentage" {
   type        = number
   default     = 100
 }
-variable "backend_service" {
+variable "backend_service_ip" {
   description = "The backend service IP"
   type        = string
   default     = "20.0.0.7"
@@ -24,7 +24,7 @@ variable "cspolicy_name" {
   default = "cspolicy"
 }
 variable "backend_service_name" {
-  description = "backend service"
+  description = "backend service name"
   type = string
   default = "service"
 }
