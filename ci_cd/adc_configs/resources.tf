@@ -8,9 +8,7 @@ resource "citrixadc_csvserver" "demo_csvserver" {
 }
 
 resource "citrixadc_lbvserver"  "lbvs"{
-  ipv46       = var.lb_ip
   name        = format("%s-lbvs", var.resource_prefix)
-  port        = 80
   servicetype = "HTTP"
 }
 

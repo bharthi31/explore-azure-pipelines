@@ -13,11 +13,6 @@ variable "resource_prefix" {
   type = string
   default = "demo"
 }
-variable "lb_ip" {
-  description = "IP of LB Vserver"
-  type = string
-  default = "1.1.1.1"
-}
 variable "priority" {
   description = "CS Policy Priority"
   type = number
