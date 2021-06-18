@@ -1,4 +1,4 @@
-variable "traffic_split_percentage" {
+variable "traffic_weight" {
   description = "Percentage of Traffic to be split"
   type        = number
   default     = 100
