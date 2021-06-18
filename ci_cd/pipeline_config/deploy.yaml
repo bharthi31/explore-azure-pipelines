@@ -3,11 +3,8 @@ trigger:
     include:
     - main
   paths:
-    exclude:
-    - ci_cd/pipeline_config/deploy.yaml
-    - ci_cd/pipeline_config/read_config.py
-    - ci_cd/pipeline_config/teardown.yaml
-    - ci_cd/deployment_config/teardown.json
+    include:
+    - ci_cd/deployment_config/setup_config.json
 
 pool: bharathi-bg-agpool
 
