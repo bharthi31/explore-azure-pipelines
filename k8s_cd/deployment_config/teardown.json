@@ -1,0 +1,3 @@
+{
+    "K8S_CONFIG_PATH" : "ci_cd/kubernetes_config/v2"
+}
