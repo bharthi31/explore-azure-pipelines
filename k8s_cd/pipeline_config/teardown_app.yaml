@@ -30,7 +30,7 @@ stages:
       inputs:
         scriptSource: 'filePath'
         scriptPath: '$(System.DefaultWorkingDirectory)/k8s_cd/pipeline_config/read_config.py'
-        arguments: --config_file $(System.DefaultWorkingDirectory)/k8s_cd/deployment_config/deploy.json --action delete
+        arguments: --config_file $(System.DefaultWorkingDirectory)/k8s_cd/deployment_config/teardown.json --action delete
 
     - task: KubectlInstaller@0
       inputs:
