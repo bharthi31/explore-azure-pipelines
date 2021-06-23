@@ -50,6 +50,6 @@ stages:
         kubernetesServiceConnection: 'bharathi-cn-svc-con'
         command: install
         chartType: FilePath
-        chartPath: '$(System.DefaultWorkingDirectory)/k8s_cd/kubernetes_config/cic_helm'
+        chartPath: '$(System.DefaultWorkingDirectory)/k8s_cd/kubernetes_configs/cic_helm'
         releaseName: cic
         overrideValues: 'nsIP=10.240.0.7,license.accept=yes,adcCredentialSecret=nslogin'
