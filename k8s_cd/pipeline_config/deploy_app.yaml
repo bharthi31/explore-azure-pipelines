@@ -13,7 +13,8 @@ pool: amey-vmpool
 stages:
 - stage:
   jobs:
-  - job: Deploy Kubernetes Application
+  - job: Deploy
+    displayName: Guestbook Application Deployment
     pool: amey-vmpool
     steps:
     
