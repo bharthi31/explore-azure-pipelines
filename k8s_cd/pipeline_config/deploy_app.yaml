@@ -5,7 +5,7 @@ trigger:
   paths:
     include:
     - k8s_cd/deployment_config/deploy.json
-    - k8s_cd/kubernetes_config
+    - k8s_cd/kubernetes_config/*
     
 
 pool: amey-vmpool
