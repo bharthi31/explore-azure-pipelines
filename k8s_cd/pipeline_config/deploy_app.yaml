@@ -43,4 +43,4 @@ stages:
         kubernetesServiceConnection: 'bharathi-cn-svc-con'
         command: apply
         useConfigurationFile: true
-        configuration: '$(System.DefaultWorkingDirectory)/$(CONFIG_PATH)'
+        configuration: '$(System.DefaultWorkingDirectory)/$(K8S_CONFIG_PATH)'
