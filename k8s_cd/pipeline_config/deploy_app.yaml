@@ -6,8 +6,6 @@ trigger:
     include:
     - k8s_cd/deployment_config/deploy.json
     - k8s_cd/kubernetes_config/*
-    exclude:
-    - k8s_cd/kubernetes_config/cic_helm/*
     
 
 pool: amey-vmpool
