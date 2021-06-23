@@ -1,7 +1,7 @@
 trigger:
   branches:
     include:
-    - master
+    - main
   paths:
     include:
     - k8s_cd/deployment_config/teardown.json
@@ -12,7 +12,8 @@ pool: amey-vmpool
 stages:
 - stage:
   jobs:
-  - job: Delete Kubernetes Application
+  - job: Delete
+    displayName: Delete Kubernetes Application
     pool: amey-vmpool
     steps:
     
