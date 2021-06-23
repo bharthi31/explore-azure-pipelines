@@ -5,6 +5,7 @@ trigger:
   paths:
     include:
     - k8s_cd/kubernetes_configs/cic_helm
+    - k8s_cd/deployment_config/deploy.json
 pool: amey-vmpool
 stages:
 - stage:
