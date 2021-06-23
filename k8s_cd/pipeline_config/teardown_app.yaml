@@ -43,5 +43,5 @@ stages:
         kubernetesServiceConnection: 'bharathi-cn-svc-con'
         command: delete
         useConfigurationFile: true
-        configuration: '$(System.DefaultWorkingDirectory)/$(CONFIG_PATH)'
+        configuration: '$(System.DefaultWorkingDirectory)/$(K8S_CONFIG_PATH)'
       condition:  and(succeeded(), eq(variables['TEARDOWN_FLAG'], true))
