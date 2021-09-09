@@ -1,6 +1,6 @@
 #cs_lb --Connecting to CSVServer to both LB Servers
 resource "citrixadc_csvserver" "demo_csvserver" {
-  ipv46       = "10.0.0.5"
+  ipv46       = "172.16.0.5"
   name        = "demo_csvserver"
   port        = 80
   servicetype = "HTTP"
