@@ -1,5 +1,5 @@
 {
-  "TRAFFIC_WEIGHT": "0",
-  "ADC_CONFIG": "ci_cd/deployment_config/v1.conf",
-  "DEPLOYMENT_VERSION": "v1"
+  "TRAFFIC_WEIGHT": "100",
+  "ADC_CONFIG": "ci_cd/deployment_config/v2.conf",
+  "DEPLOYMENT_VERSION": "v2"
 }
